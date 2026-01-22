@@ -23,3 +23,7 @@ function startTimer(){
     }
 }
 
+function stopTimer(){
+    clearInterval(timerId);
+    timerId = null;
+}
