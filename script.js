@@ -16,3 +16,10 @@ function counterIncrementer(){
     document.getElementById("timer").textContent = 
     `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 }
+
+function startTimer(){
+    if(!timerId){
+        timerId = setInterval(counterIncrementer, 1000);
+    }
+}
+
