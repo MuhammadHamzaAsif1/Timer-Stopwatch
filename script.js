@@ -34,3 +34,7 @@ function resetTimer(){
     hours = 0;
     document.getElementById("timer").textContent = "00:00:00";
 }
+
+document.getElementById("start").addEventListener("click", startTimer);
+document.getElementById("stop").addEventListener("click", stopTimer);
+document.getElementById("reset").addEventListener("click", resetTimer);
