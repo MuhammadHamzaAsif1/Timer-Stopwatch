@@ -27,3 +27,10 @@ function stopTimer(){
     clearInterval(timerId);
     timerId = null;
 }
+
+function resetTimer(){
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+    document.getElementById("timer").textContent = "00:00:00";
+}
